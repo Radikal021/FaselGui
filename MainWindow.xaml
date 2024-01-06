@@ -1,0 +1,1752 @@
+﻿<Window x:Class="GuiFasel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GuiFasel"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450" Width="800" 
+        AllowsTransparency="True"  
+        WindowStyle="None" 
+        WindowStartupLocation="CenterScreen" 
+        Background="Transparent" 
+        MouseDown="Window_MouseDown"
+        Loaded="Window_Loaded">
+
+    <Border  CornerRadius="20" BorderThickness="4" BorderBrush="White" Background="Gray" >
+
+        <Grid>
+            <Button Click="btnSend_Click" Width="80" Height="25" Content="Send" x:Name="btnSend" Panel.ZIndex="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" BorderThickness="2.5" BorderBrush="Gray" Margin="0,0,60,30"/>
+            <TabControl Padding="0,0,0,0" Margin="4,10,10,10" Background="Gray" >
+                <TabItem Header="SubSystem">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="1"/>
+                            <ColumnDefinition Width="1"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="45"/>
+                        </Grid.RowDefinitions>
+                        <GroupBox Name="UpConvert" BorderBrush="Gray" BorderThickness="1" Width="85" Height="325" Header="UpConvert" Foreground="Aqua" HorizontalAlignment="Left" Margin="0,0,0,0">
+                            <Canvas>
+                                <TextBlock Text="p1:" Foreground="White"/>
+                                <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                <TextBlock Name="lbl1UpConvert1" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                <TextBlock Name="lbl1UpConvert2" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                <TextBlock Name="lbl1UpConvert3" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                <TextBlock Name="lbl1UpConvert4" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                <TextBlock Name="lbl1UpConvert5" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                <TextBlock Name="lbl1UpConvert6" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                <TextBlock Name="lbl1UpConvert7" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                <TextBlock Name="lbl1UpConvert8" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                <TextBlock Name="lbl1UpConvert9" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                <TextBlock Name="lbl1UpConvert10" Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                <TextBlock Name="lbl1UpConvert11" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                <TextBlock Name="lbl1UpConvert12" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                <TextBlock Name="lbl1UpConvert13" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                <TextBlock Name="lbl1UpConvert14" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                <TextBlock Name="lbl1UpConvert15" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                <TextBlock Name="lbl1UpConvert16" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                <TextBlock Name="lbl1UpConvert17" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                <TextBlock Name="lbl1UpConvert18" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                <TextBlock Name="lbl1UpConvert19" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                <TextBlock Name="lbl1UpConvert20" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                            </Canvas>
+                        </GroupBox>
+                        <GroupBox Name="DownConvert" BorderBrush="Gray" BorderThickness="1" Width="105" Height="325" Header="Down convert" Foreground="Aqua" HorizontalAlignment="Left" Margin="95,0,0,0">
+                            <Canvas>
+                                <TextBlock  Text="p1:" Foreground="White"/>
+                                <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                <TextBlock Name="lblDownConvert1" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                <TextBlock Name="lblDownConvert2" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                <TextBlock Name="lblDownConvert3" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                <TextBlock Name="lblDownConvert4" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                <TextBlock Name="lblDownConvert5" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                <TextBlock Name="lblDownConvert6" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                <TextBlock Name="lblDownConvert7" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                <TextBlock Name="lblDownConvert8" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                <TextBlock Name="lblDownConvert9" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                <TextBlock Name="lblDownConvert10" Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                <TextBlock Name="lblDownConvert11" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                <TextBlock Name="lblDownConvert12" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                <TextBlock Name="lblDownConvert13" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                <TextBlock Name="lblDownConvert14" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                <TextBlock Name="lblDownConvert15" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                <TextBlock Name="lblDownConvert16" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                <TextBlock Name="lblDownConvert17" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                <TextBlock Name="lblDownConvert18" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                <TextBlock Name="lblDownConvert19" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                <TextBlock Name="lblDownConvert20" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                            </Canvas>
+                        </GroupBox>
+                        <GroupBox BorderBrush="Gray" Name="RXBeanFormer" BorderThickness="1" Width="105" Height="325" Header="RX Bean Former" Foreground="Aqua" HorizontalAlignment="Left" Margin="320,0,0,0">
+                            <Canvas>
+                                <TextBlock Text="p1:" Foreground="White"/>
+                                <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                <TextBlock Name="lblRX1" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                <TextBlock Name="lblRX2" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                <TextBlock Name="lblRX3"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                <TextBlock Name="lblRX4" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                <TextBlock Name="lblRX5" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                <TextBlock Name="lblRX6" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                <TextBlock Name="lblRX7" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                <TextBlock Name="lblRX8"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                <TextBlock Name="lblRX9"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                <TextBlock Name="lblRX10"  Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                <TextBlock Name="lblRX11"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                <TextBlock Name="lblRX12"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                <TextBlock Name="lblRX13"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                <TextBlock Name="lblRX14"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                <TextBlock Name="lblRX15"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                <TextBlock Name="lblRX16"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                <TextBlock Name="lblRX17"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                <TextBlock Name="lblRX18"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                <TextBlock Name="lblRX19"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                <TextBlock Name="lblRX20"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                            </Canvas>
+                        </GroupBox>
+
+                        <GroupBox Name="RFHead" BorderBrush="Gray" BorderThickness="1" Width="105" Height="325" Header="RF-Head" Foreground="Aqua" HorizontalAlignment="Left" Margin="210,0,0,0">
+                            <Canvas>
+                                <TextBlock Text="p1:" Foreground="White"/>
+                                <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                <TextBlock Name="lblRFHead1" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                <TextBlock Name="lblRFHead2" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                <TextBlock Name="lblRFHead3" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                <TextBlock Name="lblRFHead4" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                <TextBlock Name="lblRFHead5" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                <TextBlock Name="lblRFHead6" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                <TextBlock Name="lblRFHead7" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                <TextBlock Name="lblRFHead8" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                <TextBlock Name="lblRFHead9" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                <TextBlock Name="lblRFHead10" Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                <TextBlock Name="lblRFHead11" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                <TextBlock Name="lblRFHead12" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                <TextBlock Name="lblRFHead13" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                <TextBlock Name="lblRFHead14" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                <TextBlock Name="lblRFHead15" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                <TextBlock Name="lblRFHead16" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                <TextBlock Name="lblRFHead17" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                <TextBlock Name="lblRFHead18" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                <TextBlock Name="lblRFHead19" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                <TextBlock Name="lblRFHead20" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                            </Canvas>
+                        </GroupBox>
+
+                        <GroupBox BorderBrush="Gray" Name="TXBeanFormer" BorderThickness="1" Width="105" Height="325" Header="TX Bean Former" Foreground="Aqua" HorizontalAlignment="Left" Margin="430,0,0,0">
+                            <Canvas>
+                                <TextBlock Text="p1:" Foreground="White"/>
+                                <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                <TextBlock Name="lblTX1" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                <TextBlock Name="lblTX2" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                <TextBlock Name="lblTX3" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                <TextBlock Name="lblTX4" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                <TextBlock Name="lblTX5" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                <TextBlock Name="lblTX6" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                <TextBlock Name="lblTX7" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                <TextBlock Name="lblTX8" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                <TextBlock Name="lblTX9" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                <TextBlock Name="lblTX10" Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                <TextBlock Name="lblTX11" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                <TextBlock Name="lblTX12" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                <TextBlock Name="lblTX13" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                <TextBlock Name="lblTX14" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                <TextBlock Name="lblTX15" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                <TextBlock Name="lblTX16" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                <TextBlock Name="lblTX17" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                <TextBlock Name="lblTX18" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                <TextBlock Name="lblTX19" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                <TextBlock Name="lblTX20" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                            </Canvas>
+                        </GroupBox>
+                        <GroupBox BorderBrush="Gray" Name="MainSwitch" BorderThickness="1" Width="105" Height="325" Header="Mani Switch" Foreground="Aqua" HorizontalAlignment="Left" Margin="540,0,0,0">
+                            <Canvas>
+                                <TextBlock Text="p1:" Foreground="White"/>
+                                <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                <TextBlock Name="lblSwitch1" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                <TextBlock Name="lblSwitch2" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                <TextBlock Name="lblSwitch3" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                <TextBlock Name="lblSwitch4" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                <TextBlock Name="lblSwitch5" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                <TextBlock Name="lblSwitch6" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                <TextBlock Name="lblSwitch7" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                <TextBlock Name="lblSwitch8" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                <TextBlock Name="lblSwitch9" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                <TextBlock Name="lblSwitch10" Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                <TextBlock Name="lblSwitch11" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                <TextBlock Name="lblSwitch12" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                <TextBlock Name="lblSwitch13" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                <TextBlock Name="lblSwitch14" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                <TextBlock Name="lblSwitch15" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                <TextBlock Name="lblSwitch16" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                <TextBlock Name="lblSwitch17" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                <TextBlock Name="lblSwitch18" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                <TextBlock Name="lblSwitch19" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                <TextBlock Name="lblSwitch20" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                            </Canvas>
+                        </GroupBox>
+
+                    </Grid>
+                </TabItem>
+                <TabItem  Header="Power">
+                    <ScrollViewer HorizontalContentAlignment="Center" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden" >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="0"/>
+                                <ColumnDefinition Width="0"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="45"/>
+                            </Grid.RowDefinitions>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power1" Foreground="Aqua" HorizontalAlignment="Left" Margin="0,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Name="lblpower1" Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Name="lblpower2"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Name="lblpower3"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Name="lblpower4"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Name="lblpower5"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Name="lblpower6"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Name="lblpower7"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Name="lblpower8"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Name="lblpower9"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Name="lblpower10"  Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Name="lblpower11"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Name="lblpower12"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Name="lblpower13"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Name="lblpower14"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Name="lblpower15"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Name="lblpower16"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Name="lblpower17"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Name="lblpower18"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Name="lblpower19"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Name="lblpower20"  Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox Name="power2" BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power2" Foreground="Aqua" HorizontalAlignment="Left" Margin="69,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power7" Foreground="Aqua" HorizontalAlignment="Left" Margin="420,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power6" Foreground="Aqua" HorizontalAlignment="Left" Margin="350,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power8" Foreground="Aqua" HorizontalAlignment="Left" Margin="490,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power5" Foreground="Aqua" HorizontalAlignment="Left" Margin="280,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power4" Foreground="Aqua" HorizontalAlignment="Left" Margin="210,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power3" Foreground="Aqua" HorizontalAlignment="Left" Margin="138,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power9" Foreground="Aqua" HorizontalAlignment="Left" Margin="560,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power10" Foreground="Aqua" HorizontalAlignment="Left" Margin="630,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power11" Foreground="Aqua" HorizontalAlignment="Left" Margin="700,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power12" Foreground="Aqua" HorizontalAlignment="Left" Margin="770,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power13" Foreground="Aqua" HorizontalAlignment="Left" Margin="840,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power14" Foreground="Aqua" HorizontalAlignment="Left" Margin="910,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power15" Foreground="Aqua" HorizontalAlignment="Left" Margin="980,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power16" Foreground="Aqua" HorizontalAlignment="Left" Margin="1050,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power17" Foreground="Aqua" HorizontalAlignment="Left" Margin="1120,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power18" Foreground="Aqua" HorizontalAlignment="Left" Margin="1190,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power19" Foreground="Aqua" HorizontalAlignment="Left" Margin="1260,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power20" Foreground="Aqua" HorizontalAlignment="Left" Margin="1330,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power21" Foreground="Aqua" HorizontalAlignment="Left" Margin="1400,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power22" Foreground="Aqua" HorizontalAlignment="Left" Margin="1470,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power23" Foreground="Aqua" HorizontalAlignment="Left" Margin="1540,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power24" Foreground="Aqua" HorizontalAlignment="Left" Margin="1610,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power25" Foreground="Aqua" HorizontalAlignment="Left" Margin="1680,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power26" Foreground="Aqua" HorizontalAlignment="Left" Margin="1750,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power27" Foreground="Aqua" HorizontalAlignment="Left" Margin="1820,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power28" Foreground="Aqua" HorizontalAlignment="Left" Margin="1890,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power29" Foreground="Aqua" HorizontalAlignment="Left" Margin="1960,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power30" Foreground="Aqua" HorizontalAlignment="Left" Margin="2030,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power31" Foreground="Aqua" HorizontalAlignment="Left" Margin="2100,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox BorderBrush="Gray" BorderThickness="1" Width="65" Height="325" Header="Power32" Foreground="Aqua" HorizontalAlignment="Left" Margin="2170,0,0,0">
+                                <Canvas>
+                                    <TextBlock Text="p1:" Foreground="White"/>
+                                    <TextBlock Text="p2:" Foreground="White" Canvas.Top="15"/>
+                                    <TextBlock Text="p3:" Foreground="White"  Canvas.Top="30"/>
+                                    <TextBlock Text="p4:"  Foreground="White" Canvas.Top="45"/>
+                                    <TextBlock Text="p5:"  Foreground="White" Canvas.Top="60"/>
+                                    <TextBlock Text="p6:"  Foreground="White" Canvas.Top="75"/>
+                                    <TextBlock Text="p7:"  Foreground="White" Canvas.Top="90"/>
+                                    <TextBlock Text="p8:"  Foreground="White"  Canvas.Top="105"/>
+                                    <TextBlock Text="p9:" Foreground="White"  Canvas.Top="120"/>
+                                    <TextBlock Text="p10:" Foreground="White"  Canvas.Top="135"/>
+                                    <TextBlock Text="p11:" Foreground="White"  Canvas.Top="150"/>
+                                    <TextBlock Text="p12:" Foreground="White"  Canvas.Top="165"/>
+                                    <TextBlock Text="p13:" Foreground="White"  Canvas.Top="180"/>
+                                    <TextBlock Text="p14:" Foreground="White"  Canvas.Top="195"/>
+                                    <TextBlock Text="p15:" Foreground="White" Canvas.Top="210"/>
+                                    <TextBlock Text="p16:" Foreground="White" Canvas.Top="225"/>
+                                    <TextBlock Text="p17:" Foreground="White" Canvas.Top="240"/>
+                                    <TextBlock Text="p18:" Foreground="White" Canvas.Top="255"/>
+                                    <TextBlock Text="p19:" Foreground="White" Canvas.Top="270"/>
+                                    <TextBlock Text="p20:" Foreground="White" Canvas.Top="285"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="0"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="15"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="30"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="45"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="60"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="75"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="90"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="105"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="120"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0"  Canvas.Top="135"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="150"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="165"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="180"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="195"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="210"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="225"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="240"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="255"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="270"/>
+                                    <TextBlock Text="show" Foreground="White" Canvas.Right="0" Canvas.Top="285"/>
+                                </Canvas>
+                            </GroupBox>
+                        </Grid>
+                    </ScrollViewer>
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Border>
+</Window>
